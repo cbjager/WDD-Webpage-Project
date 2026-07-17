@@ -1,0 +1,32 @@
+/* Add your CSS here to style your father's day page */
+body {
+    background: linear-gradient(to bottom, #F39C12, #40abf3);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+section:hover {
+    transform: scale(1.02);
+    transition: .3s;
+}

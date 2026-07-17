@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        main {
+            width: 700px;
+            margin: 40px auto;
+            padding: 15px;
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            background-position: center;
+            border: 8px solid black;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+        body {
+            background-color: #E8ECED;
+            font-family: arial;
+        }
+        .portrait {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 7px solid white;
+            object-fit: cover;
+            transition: .3s;
+        }
+        .portrait:hover {
+            border-color: goldenrod;
+        }
+        .first-presidency {
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+        }
+        .quorum-of-the-twelve {
+            justify-content: center;
+            grid-template-columns: repeat(4, 100px);
+            display: grid;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+     <main>
+        
+        <section>
+            <h1>First Presidency</h1>
+            <div class="first-presidency">
+                <img class="portrait" src="images/eyring.webp" alt="eyring">
+                <img class="portrait" src="images/oaks.webp" alt="oaks">
+                <img class="portrait" src="images/christofferson.webp" alt="christofferson">
+            </div>
+        </section>
+
+        <section>
+            <h2>Quorum of the Twelve Apostles</h2>
+            <div class="quorum-of-the-twelve">
+                <img class="portrait" src="images/uchtdorf.webp" alt="uchtdorf">
+                <img class="portrait" src="images/bednar.webp" alt="bednar">
+                <img class="portrait" src="images/cook.webp" alt="cook">
+                <img class="portrait" src="images/anderson.webp" alt="anderson">
+                <img class="portrait" src="images/rasband.webp" alt="rasband">
+                <img class="portrait" src="images/stevenson.webp" alt="stevenson">
+                <img class="portrait" src="images/renlund.webp" alt="renlund">
+                <img class="portrait" src="images/gong.webp" alt="gong">
+                <img class="portrait" src="images/soares.webp" alt="soares">
+                <img class="portrait" src="images/kearon.webp" alt="kearon">
+                <img class="portrait" src="images/causse.webp" alt="causse">
+                <img class="portrait" src="images/gilbert.webp" alt="gilbert">
+            </div>
+        </section>
+
+     </main>
+</body>
+</html>
