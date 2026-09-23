@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carissa's Web Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-  <body>
+
+<body>
+
     <header>
-        <img src="images/Dogs 2.png" alt="Carissa's Web Portfolio Logo">
+        <img src="images/Dogs 2.png" alt="Carissa's Web Portfolio logo">
         <h1>Carissa's Web Portfolio</h1>
     </header>
-  
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,73 +23,109 @@
             <li><a href="about me.html">About Me</a></li>
             <li><a href="project_reports.html">Project Reports</a></li>
         </ul>
-    </nav>   
+    </nav>
 
     <main>
+
         <section>
             <h2>Welcome</h2>
-            <p>Welcome to my website! This is my WDD130 portfolio for school. Here you can use the navigation menu to visit WWR, my White Water Rafting project, ICE, my 60 minute homework challenges, and About Me to learn more about, well, me!</p>
+            <p>
+                Welcome to my website! This is my WDD130 portfolio for school.
+                Here you can use the navigation menu to visit WWR, my White Water
+                Rafting project, ICE, my 60-minute homework challenges, and About Me
+                to learn more about, well, me!
+            </p>
         </section>
-        <section>
-            <h2>Skills I'm Learning</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Grid</li>
-                <li>Flexbox</li>
-            </ul>
+
+        <section class="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skills-group">
+                    <h3>Skills I've Learned</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Grid</li>
+                        <li>Flexbox</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Skills I'm Learning</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+            </div>
         </section>
+
         <section>
             <h2>Projects Table</h2>
+
             <table>
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>WWR</td>
-                <td>White Water Rafting website project</td>
-                <td>In Progress</td>
-            </tr>
-            <tr>
-                <td>ICE</td>
-                <td>In Class Exercise challenges</td>
-                <td>Completed</td>
-            </tr>
-            <tr>
-                <td>About Me</td>
-                <td>Page all about me!</td>
-                <td>Completed</td>
-            </tr>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>WWR</td>
+                        <td>White Water Rafting website project</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>ICE</td>
+                        <td>In-Class Exercise challenges</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>About Me</td>
+                        <td>Page all about me!</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
+
         <section>
             <h2>Contact Me</h2>
 
             <form>
                 <div>
-                    <label>Name:</label>
-                    <input type="text">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
                 </div>
 
                 <div>
-                    <label>Email:</label>
-                    <input type="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
                 </div>
 
                 <div>
-                    <label>Comments:</label>
-                    <textarea></textarea>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
                 </div>
 
                 <button type="submit">Submit</button>
             </form>
         </section>
+
     </main>
 
     <footer>
     </footer>
-        
-  </body>
+
+</body>
+
 </html>
