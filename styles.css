@@ -1,10 +1,10 @@
 /* Color Palette
-Off White: #F7F5F2
-Sage Green: #7A9E7E
-Dusty Blue: #6F8FAF
-Charcoal: #2F2F2F
-Gold: #D2AF26
-Light Gray: #E8ECED
+   Off White: #F7F5F2
+   Sage Green: #7A9E7E
+   Dusty Blue: #6F8FAF
+   Charcoal: #2F2F2F
+   Gold: #D2AF26
+   Light Gray: #E8ECED
 */
 
 body {
@@ -14,8 +14,10 @@ body {
     margin: 0;
 }
 
-h1, h2 {
-    font-family: Georgia, Arial;
+h1,
+h2,
+h3 {
+    font-family: Georgia, Arial, sans-serif;
 }
 
 header {
@@ -25,16 +27,13 @@ header {
 
 header img {
     width: 250px;
+    max-width: 100%;
 }
 
 main {
     width: 85%;
     max-width: 900px;
     margin: 0 auto;
-}
-
-section ul {
-    line-height: 1.8;
 }
 
 section {
@@ -45,17 +44,25 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+section ul {
+    line-height: 1.8;
+}
+
+/* Navigation */
+
 nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
     justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #2F2F2F;
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 10px 15px;
     border-radius: 20px;
 }
@@ -65,28 +72,49 @@ nav a:hover {
     color: #2F2F2F;
 }
 
+/* Skills */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.skills-group {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Tables */
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
-    border: 1px solid rgba(47,47,47,.25);
+    border: 1px solid rgba(47, 47, 47, 0.25);
 }
+
+/* Forms */
 
 form div {
     margin-bottom: 15px;
 }
 
-input, textarea {
-    width: 300px;
-}
-
 label {
     display: inline-block;
     width: 100px;
+}
+
+input,
+textarea {
+    width: 300px;
+    max-width: 100%;
 }
 
 button {
@@ -96,11 +124,14 @@ button {
     border-radius: 20px;
     padding: 10px 20px;
 }
+
+/* About Page */
+
 .about-card {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -109,6 +140,7 @@ button {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
+    align-items: center;
 }
 
 .hero-photo {
@@ -119,15 +151,36 @@ button {
     border-radius: 10px;
 }
 
-.photo-grid img, .photo-grid video {
+.photo-grid img,
+.photo-grid video {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
-.photo-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 15px;
-    align-items: center;
+/* Mobile */
+
+@media (max-width: 700px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-photo {
+        grid-row: auto;
+    }
+
+    label {
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
 }
